@@ -3,7 +3,6 @@
 Página web personal de una sola vista (*one-page*) que presenta mi perfil profesional: soporte de campo e infraestructura crítica (cajeros automáticos / ATMs, redes, sistemas bancarios) y mi formación autodidacta como desarrollador web, apoyada en asistentes de IA (Claude y Gemini).
 
 **Demo publicada:** https://claude.ai/code/artifact/ea56de77-9c18-441e-9416-8928e9f09cdd
-*(Al subir este repositorio a GitHub, puede activarse GitHub Pages para tener también una demo en `https://<usuario>.github.io/<repo>/` — ver sección "Cómo verla" abajo.)*
 
 ## Tecnologías
 
