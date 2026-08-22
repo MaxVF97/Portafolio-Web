@@ -41,16 +41,3 @@ repo-portfolio-web/
 └── README.md
 ```
 
-## Cómo verla
-
-No requiere instalación ni servidor: basta con abrir `index.html` en cualquier navegador moderno.
-
-Para publicarla en línea gratis con **GitHub Pages**:
-1. Sube esta carpeta como un repositorio nuevo en GitHub.
-2. Entra a **Settings → Pages** del repositorio.
-3. En "Source" selecciona la rama `main` y la carpeta `/root`.
-4. Guarda — GitHub publicará el sitio en `https://<tu-usuario>.github.io/<nombre-del-repo>/` en unos minutos.
-
-## Créditos
-
-Diseñado y construido con guía y apoyo de **Claude** (Anthropic) como asistente de programación e IA de diseño.
