@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maximiliano Vargas Franco — Portfolio</title>
+  <meta name="description" content="Ingeniero en Informática con experiencia de campo en infraestructura crítica y ATMs, formándose como desarrollador web con HTML, CSS y JavaScript.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="wrap nav-row">
+      <a href="#inicio" class="nav-logo">MVF<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#perfil">Sobre mí</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyecto">Proyectos</a></li>
+      </ul>
+      <a href="#contacto" class="nav-cta">Contactar</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <canvas id="net-canvas" aria-hidden="true"></canvas>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+    <div class="token-layer" id="token-layer" aria-hidden="true"></div>
+
+    <div class="wrap hero-inner">
+      <div class="badge"><span class="dot"></span>DISPONIBLE PARA NUEVAS OPORTUNIDADES</div>
+      <h1 class="name">Maximiliano<br>Vargas Franco</h1>
+      <div class="role-type"><span id="type-target"></span><span class="cursor"></span></div>
+      <p class="hero-sub">
+        Ingeniero en Informática con experiencia de campo en infraestructura crítica y cajeros automáticos (ATMs) bajo SLA, que está construyendo en paralelo un perfil de desarrollo web — HTML, CSS y JavaScript — apoyado en Claude como asistente de programación.
+      </p>
+      <div class="hero-actions">
+        <a href="#experiencia" class="btn btn-primary">Ver experiencia</a>
+        <a href="#proyecto" class="btn btn-ghost">Ver proyectos de código ↗</a>
+      </div>
+      <div class="hero-contact-row">
+        <a class="icon-btn" href="tel:+523123820175" target="_top" aria-label="Teléfono" title="(312) 382-0175">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+        <a class="icon-btn" href="mailto:max.vfran97@gmail.com" target="_top" aria-label="Correo" title="max.vfran97@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6c0-1.1-.9-2-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6z"/><path d="m22 6-10 7L2 6"/></svg>
+        </a>
+        <a class="icon-btn" href="https://github.com/MaxVF97" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="github.com/MaxVF97">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.3c0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9 9 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 3.9-1.3 6.8-5.2 6.8-9.7C22 6.6 17.5 2 12 2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-cue"><div class="line"></div>Scroll</div>
+  </section>
+
+  <section id="perfil">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Sobre mí</div>
+        <h2 class="section-title">De la sala de cajeros al navegador</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Llevo desde 2020 trabajando <b>en campo</b>: instalando, dando mantenimiento y resolviendo fallas en cajeros automáticos (Diebold, NCR) e infraestructura de red para clientes bancarios, educativos y de retail — siempre bajo acuerdos de nivel de servicio (SLA) exigentes y con alta disponibilidad como prioridad número uno.
+          </p>
+          <p>
+            En paralelo, estoy formándome como <b>desarrollador web</b> por mi cuenta: HTML, CSS y JavaScript puro, sin frameworks, escribiendo yo mismo la lógica de cada proyecto con guía paso a paso de <b>Claude</b>, mi asistente de IA para programar. Ya publiqué mi primer proyecto serio (una Pokédex que consume una API en tiempo real) en GitHub Pages.
+          </p>
+          <p>
+            Busco un rol donde ese doble perfil — <b>operativo/infraestructura</b> y <b>desarrollo</b> — sume: soporte técnico y redes con capacidad real de automatizar y construir herramientas internas.
+          </p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-num">4<span>+</span></div>
+            <div class="stat-label">años de experiencia en soporte de campo e infraestructura</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">6<span>+</span></div>
+            <div class="stat-label">empresas y clientes atendidos (bancario, retail, educativo)</div>
+          </div>
+          <div class="stat-card icon-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <div class="stat-label">Desarrollo web autodidacta con apoyo de IA</div>
+          </div>
+          <div class="stat-card icon-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>
+            <div class="stat-label">Redes, ATMs y sistemas críticos bajo SLA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Stack</div>
+        <h2 class="section-title">Herramientas que uso</h2>
+        <p class="section-desc">De la sala de servidores al editor de código — lo que manejo día a día.</p>
+      </div>
+
+      <div class="tech-categories">
+        <div>
+          <div class="tech-cat-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>Desarrollo asistido por IA</div>
+          <div class="tech-chips">
+            <span class="chip ai"><span class="sw"></span>Claude</span><span class="chip ai"><span class="sw"></span>Gemini</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-cat-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg>Frontend</div>
+          <div class="tech-chips">
+            <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-cat-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10M4 17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2M4 17l4-4M20 17l-4-4"/></svg>Programación &amp; Datos</div>
+          <div class="tech-chips">
+            <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PowerShell</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-cat-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>Low-Code / No-Code</div>
+          <div class="tech-chips">
+            <span class="chip">Bubble.io</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-cat-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg>Redes &amp; Infraestructura</div>
+          <div class="tech-chips">
+            <span class="chip">Cisco</span><span class="chip">TCP/IP</span><span class="chip">Windows Server</span><span class="chip">Linux</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-cat-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h2M7 13h6"/></svg>Sistemas Críticos &amp; ATMs</div>
+          <div class="tech-chips">
+            <span class="chip">Diebold</span><span class="chip">NCR</span><span class="chip">Biometría</span><span class="chip">Help Desk L1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Experiencia</div>
+        <h2 class="section-title">Trayectoria profesional</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-marker"><div class="tl-dot"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <span class="tl-role">Ingeniero Especialista en Infraestructura de TI y Sistemas</span>
+              <span class="tl-period mono">NOV 2024 – JUN 2026</span>
+            </div>
+            <div class="tl-company">GeoTecIT</div>
+            <ul class="tl-duties">
+              <li>Responsable de la disponibilidad y continuidad operativa de infraestructura de red y sistemas críticos en múltiples nodos, incluyendo la red de cajeros automáticos (ATM) de la institución bancaria.</li>
+              <li>Mantenimiento preventivo/correctivo de ATMs Diebold y NCR: diagnóstico de fallas en hardware, periféricos y sistemas biométricos, garantizando disponibilidad bajo SLA.</li>
+              <li>Coordinación con mesas de ayuda (Help Desk) globales y grupos de ingeniería para resolución y escalación de incidencias críticas en tiempo real.</li>
+              <li>Diseñé e implementé un sistema interno con Low-Code (Bubble.io) para control y catalogación de componentes, optimizando los tiempos de respuesta del equipo de soporte.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="chip">ATMs</span><span class="chip">Redes</span><span class="chip">Help Desk</span><span class="chip">Bubble.io</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><div class="tl-dot"></div></div>
+          <div class="tl-card" style="padding-bottom:0;">
+            <div class="tl-head">
+              <span class="tl-role">Ingeniero de Soporte de Campo e Infraestructura</span>
+              <span class="tl-period mono">2020 – 2023</span>
+            </div>
+            <div class="tl-company">Alsara Servicios · Sonda · Uninet · Telmex · Compusof · Red UNO</div>
+            <ul class="tl-duties">
+              <li>Soporte técnico integral (hardware/software), híbrido (sitio y remoto), para grandes cuentas corporativas de los sectores financiero, educativo y retail.</li>
+              <li>Administración y diagnóstico de fallas en equipos de telecomunicaciones (Cisco), módems, antenas y racks de comunicaciones.</li>
+              <li>Supervisión e instalación de hardware en nuevos nodos tecnológicos bajo estrictos estándares de calidad y SLAs pactados.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="chip">Cisco</span><span class="chip">Telecom</span><span class="chip">SLA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyecto">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Proyectos de código</div>
+        <h2 class="section-title">Lo que he construido</h2>
+      </div>
+
+      <div class="projects-stack">
+
+        <div class="project-card">
+          <div class="project-top">
+            <div>
+              <div class="project-eyebrow">github.com/MaxVF97/Pokedex</div>
+              <div class="project-title">Pokédex Interactiva</div>
+            </div>
+            <div class="project-links">
+              <a href="https://MaxVF97.github.io/Pokedex/" target="_blank" rel="noopener noreferrer">Ver demo ↗</a>
+            </div>
+          </div>
+          <p class="project-desc">
+            Aplicación de página única (<span class="mono">pokedex_final.html</span>) que consume la <b>PokéAPI en tiempo real</b>, escrita en JavaScript puro — sin frameworks — como parte de mi formación autodidacta. Escribí yo la lógica (peticiones a la API, manejo de estado, eventos del DOM) con guía paso a paso de <b>Claude</b>, mientras que el diseño visual grande se construyó junto con él, siempre con explicación de cada decisión de CSS.
+          </p>
+          <ul class="project-highlights">
+            <li>Búsqueda por nombre/ID, modo aleatorio, tipos, debilidades y movimientos por nivel.</li>
+            <li>Modo de comparación de 2 Pokémon lado a lado, con selección interactiva de tarjetas.</li>
+            <li>Estadísticas base con barras de progreso y navegación anterior/siguiente.</li>
+            <li>Favoritos persistentes (localStorage) y sistema centralizado de audio.</li>
+            <li>Detección visual de Pokémon legendarios con efectos y tipografías propias.</li>
+            <li>Bugs resueltos documentados: anidación de bloques, estado obsoleto entre ciclos, timeouts sin cancelar.</li>
+          </ul>
+          <div class="project-stack-row">
+            <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">PokéAPI</span><span class="chip ai"><span class="sw"></span>Claude</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div>
+              <div class="project-eyebrow">github.com/MaxVF97/Lista-de-tareas</div>
+              <div class="project-title">Lista de Tareas Interactiva</div>
+            </div>
+            <div class="project-links">
+              <a href="https://maxvf97.github.io/Lista-de-tareas/" target="_blank" rel="noopener noreferrer">Ver demo ↗</a>
+            </div>
+          </div>
+          <p class="project-desc">
+            Mi <b>primer proyecto construido con Claude</b>, y el punto de partida de mi formación autodidacta en desarrollo web: una aplicación para agregar, editar y completar tareas, escrita en HTML, CSS y JavaScript puro.
+          </p>
+          <ul class="project-highlights">
+            <li>Agregar tareas con clic o tecla Enter, con validación de campo vacío.</li>
+            <li>Fecha y hora opcional por tarea, con checkbox que muestra/oculta el selector dinámicamente.</li>
+            <li>Edición de texto en línea (contentEditable) con salida automática al hacer clic fuera.</li>
+            <li>Ordenamiento automático — pendientes por fecha, completadas al final — animado con la técnica FLIP.</li>
+            <li>Delegación de eventos y atributos <span class="mono">data-*</span> para guardar información no visible.</li>
+            <li>Diseño oscuro y responsivo con CSS Grid, variables personalizadas e íconos SVG propios.</li>
+          </ul>
+          <div class="project-stack-row">
+            <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip ai"><span class="sw"></span>Claude</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <div class="eyebrow" style="justify-content:center; display:inline-flex;">Contacto</div>
+      <h2 class="contact-title">¿Buscas a alguien que resuelva tanto el cable como el código?</h2>
+      <p class="contact-sub">Escríbeme — con gusto platicamos sobre soporte de campo, infraestructura, o el próximo proyecto de desarrollo.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:max.vfran97@gmail.com" target="_top">Escribir un correo</a>
+        <a class="btn btn-ghost" href="tel:+523123820175" target="_top">(312) 382-0175</a>
+        <a class="btn btn-ghost" href="https://github.com/MaxVF97" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>MAXIMILIANO VARGAS FRANCO · <a href="mailto:max.vfran97@gmail.com" target="_top">max.vfran97@gmail.com</a> · CV 2026</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
