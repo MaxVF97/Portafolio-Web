@@ -159,13 +159,33 @@
 
       <div class="timeline">
         <div class="tl-item">
+          <div class="tl-marker"><div class="tl-dot tl-dot-live"></div><div class="tl-line"></div></div>
+          <div class="tl-card">
+            <div class="tl-head">
+              <span class="tl-role">Desarrollador Web y Soporte Técnico</span>
+              <span class="tl-period mono">OCT 2026 – ACTUAL</span>
+            </div>
+            <div class="tl-company">Pollos Colorado · Proyecto independiente · Villa de Álvarez, Colima</div>
+            <ul class="tl-duties">
+              <li>Diseñé, construí y lancé el menú en línea con pedidos por WhatsApp de un negocio local de pollos asados al carbón; en operación desde octubre de 2026.</li>
+              <li>Implementé las reglas del negocio (horarios, hora de entrega más pronta, promoción de viernes, costo de envío por zona) y un control de agotados en tiempo real con Google Sheets.</li>
+              <li>Publiqué el sitio con GitHub y Cloudflare Pages (despliegue automático, sin servidor ni costo mensual) y doy mantenimiento y soporte continuo al negocio.</li>
+              <li>Generé la documentación de operación: guía diaria para el negocio, memoria técnica, configuración de WhatsApp Business y material impreso (pósters y stickers).</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="chip">HTML · CSS · JS</span><span class="chip">WhatsApp</span><span class="chip">Google Sheets</span><span class="chip">Cloudflare Pages</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
           <div class="tl-marker"><div class="tl-dot"></div><div class="tl-line"></div></div>
           <div class="tl-card">
             <div class="tl-head">
               <span class="tl-role">Ingeniero Especialista en Infraestructura de TI y Sistemas</span>
-              <span class="tl-period mono"> ENE 2025 – AGO 2026 </span>
+              <span class="tl-period mono">ENE 2025 – AGO 2026</span>
             </div>
-            <div class="tl-company"> Alsara Servicios / GeoTecIT </div>
+            <div class="tl-company">GeoTecIT / Alsara Servicios</div>
             <ul class="tl-duties">
               <li>Responsable de la disponibilidad y continuidad operativa de infraestructura de red y sistemas críticos en múltiples nodos, incluyendo la red de cajeros automáticos (ATM) de la institución bancaria.</li>
               <li>Mantenimiento preventivo/correctivo de ATMs Diebold y NCR: diagnóstico de fallas en hardware, periféricos y sistemas biométricos, garantizando disponibilidad bajo SLA.</li>
@@ -185,7 +205,7 @@
               <span class="tl-role">Ingeniero de Soporte de Campo e Infraestructura</span>
               <span class="tl-period mono">2020 – 2023</span>
             </div>
-            <div class="tl-company"> Sonda · Uninet · Telmex · Compusof · Red UNO </div>
+            <div class="tl-company">Sonda · Uninet · Telmex · Compusof · Red UNO</div>
             <ul class="tl-duties">
               <li>Soporte técnico integral (hardware/software), híbrido (sitio y remoto), para grandes cuentas corporativas de los sectores financiero, educativo y retail.</li>
               <li>Administración y diagnóstico de fallas en equipos de telecomunicaciones (Cisco), módems, antenas y racks de comunicaciones.</li>
@@ -208,6 +228,49 @@
       </div>
 
       <div class="projects-stack">
+
+        <div class="project-card featured">
+          <div class="project-top">
+            <div>
+              <div class="live-pill"><span class="dot"></span>En operación · Oct 2026</div>
+              <div class="project-eyebrow">github.com/MaxVF97/Pollos-Colorado</div>
+              <div class="project-title">Pollos Colorado — Menú en línea</div>
+            </div>
+            <div class="project-links">
+              <a href="https://polloscolorado.pages.dev" target="_blank" rel="noopener noreferrer">Ver sitio en vivo ↗</a>
+              <a href="https://github.com/MaxVF97/Pollos-Colorado" target="_blank" rel="noopener noreferrer">Repositorio ↗</a>
+            </div>
+          </div>
+          <p class="project-desc">
+            Mi primer proyecto <b>con un cliente real</b>: un menú digital con pedidos por WhatsApp para un negocio de pollos asados al carbón en Villa de Álvarez, Colima. El cliente arma su pedido en el celular, y le llega al negocio como un mensaje de WhatsApp ya escrito, con el total calculado. Es una página estática en <b>HTML, CSS y JavaScript sin frameworks</b>, hecha junto con <b>Claude</b>, sin servidor propio ni costo mensual.
+          </p>
+
+          <div class="project-status">
+            <div class="status-item"><b>Menú en línea activo</b><span>Abre de miércoles a lunes; pedidos de 12:15 a 5:15 p.m., martes descansa.</span></div>
+            <div class="status-item"><b>Pedidos por WhatsApp</b><span>Llegan con producto, sabores, entrega, forma de pago y notas.</span></div>
+            <div class="status-item"><b>Agotados en vivo</b><span>El negocio palomea en Google Sheets y la página se actualiza sola en máximo 2 minutos.</span></div>
+          </div>
+
+          <ul class="project-highlights">
+            <li>Carrito con sabores (completo o mitad y mitad), sabor extra y notas; no se pierde si el cliente sale a WhatsApp y regresa (<span class="mono">sessionStorage</span>).</li>
+            <li>Reglas de negocio automáticas: hora más pronta según producto y tipo de entrega, aviso de hora pico y zonas de envío (Colima, Villa de Álvarez, Coquimatlán).</li>
+            <li>Promoción de viernes visible y vendible solo ese día, con horario calculado en hora de Colima sin importar la del celular.</li>
+            <li>Disponibilidad leída desde una hoja de Google publicada como CSV; si algo se agota se bloquean todos los productos que lo llevan.</li>
+            <li>Publicación automática con GitHub + Cloudflare Pages en cada cambio, en plan gratuito.</li>
+            <li>Caja de mostrador en modo demo (<span class="mono">/caja</span>) para tablet; fase 2 contempla ventas a Google Sheets y ticket en impresora térmica.</li>
+          </ul>
+
+          <div class="project-docs">
+            <div class="project-docs-title">Entregables y documentación generada</div>
+            <div class="project-stack-row" style="margin-top:0;">
+              <span class="chip">Guía de uso para el negocio</span><span class="chip">Memoria técnica</span><span class="chip">Configuración de WhatsApp Business</span><span class="chip">Pósters con link para pedir</span><span class="chip">Stickers para empaque</span><span class="chip">Hoja de control de agotados</span>
+            </div>
+          </div>
+
+          <div class="project-stack-row">
+            <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Google Sheets</span><span class="chip">Cloudflare Pages</span><span class="chip">WhatsApp</span><span class="chip ai"><span class="sw"></span>Claude</span>
+          </div>
+        </div>
 
         <div class="project-card">
           <div class="project-top">
